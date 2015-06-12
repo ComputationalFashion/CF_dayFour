@@ -38,6 +38,7 @@ def main():
         
         polylinePts = rs.PolylineVertices(unit)
         
+        print(str(polylinePts[0]))
         for pt in polylinePts:
             tc = calcTriLinear(pt,unitCubeMin,unitCubeMax)
             unitCoords.append(tc)
@@ -68,6 +69,5 @@ def main():
 
 if __name__ == "__main__":
     main()
-
 
 
